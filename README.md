@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @GarrettHair
 - 👀 I’m interested in ... Computer Science and Space
-- 🌱 I’m currently learning ... Python and Java
+- 🌱 I’m currently learning ... Web Development
 - 💞️ I’m looking to collaborate on ... Any project someone wants to give a beginner a try on.
 - 📫 How to reach me ... GarrettHair@gmail.com
 
