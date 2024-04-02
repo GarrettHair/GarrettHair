@@ -1,0 +1,23 @@
+Link to Student Guide https://os.cybbh.io/public/os/latest/index.html
+-------------------------------------------------------------------------------------
+Anything inside the ( ) is a powershell command
+
+Basic Powershell Concepts:
+
+  Powershell version command (pwsh)
+  
+	To start a transcript (start-transcript) shows every command and everyout put of the shell you are transcribing 
+  use (stop-transcript) to end the transcribing.
+
+	(Get-Process | Get-Member | Where-Object {$_.Membertype -match "Method"})      
+  # Displays all objects with Method in their name from the results from Get-Member of the Get-Process cmdlet
+	
+	While using multiple boxes use (whoami) to confirm you are on the correct machine
+
+	Using DOT notain you can do something like ((get-process).name) to see all the names of the processes running on the machine
+	
+	Using ((Get-Process calculator*).kill()) is an example of using the .kill() method to stop a process
+
+	The $_. pipeline varible iterates through each object from the previously piped command 
+	((Get-Process | Select-Object Name, ID, path | Where-object {$_.ID -lt '1000'}).count)
+	Shows the count of all the processes with a PID lower than 1000
