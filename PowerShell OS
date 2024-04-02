@@ -1,9 +1,21 @@
 Link to Student Guide https://os.cybbh.io/public/os/latest/index.html
+I am stack # 14 for OS (if stack gets messed up # may get changed)
 --------------------------------------------------------------------------------------
 Anything inside the ( ) is a powershell command
 --------------------------------------------------------------------------------------
 Windows Persistance Mechanisims
 
+Powershell Profiles:           
+        ____________________________________                                   
+	| Most impactful is AllUsersAllHosts|
+	| 2nd is AllUsersAllcurrentsHosts   |	
+	| 3rd is currentUserAllHosts 	    |________________
+	| 4th is currentUsercurrentHost     |		     |
+	____________________________________		     v this can be changed for the others above
+	
+	A way to check for them is (test-path -path $profile.currentUsercurrentHost) this returns a boolean statment	
+	If it returns true that means there is a configured profile 
+	Using ($profile | Get-Member -Type NoteProperty | ft -wrap) displays profile Names, MemberType, and Paths
 --------------------------------------------------------------------------------------
 Linux Persistance Mechanisims
 
