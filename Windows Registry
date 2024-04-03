@@ -1,0 +1,4 @@
+New-PSDrive -PSprovider Registry -Name HKU -Root HKEY_USERS
+
+
+get-psdrive
