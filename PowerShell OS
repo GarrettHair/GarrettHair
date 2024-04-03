@@ -23,6 +23,10 @@ Powershell Profiles:
 	A way to check for them is (test-path -path $profile.currentUsercurrentHost) this returns a boolean statment	
 	If it returns true that means there is a configured profile 
 	Using ($profile | Get-Member -Type NoteProperty | ft -wrap) displays profile Names, MemberType, and Paths
+
+	Run Keys:
+
+
 --------------------------------------------------------------------------------------
 Linux Persistance Mechanisims
 
