@@ -1,0 +1,7 @@
+using (who) can tell you whos logged into the machine
+
+using (ifconfig) gives you IP and physical address information
+
+using (netstat) -ano gives you network connection information *helps find suspisious ports
+
+using (sudo netstat -ltup gives the process ID associated with the certain connection.
