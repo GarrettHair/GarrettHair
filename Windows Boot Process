@@ -4,3 +4,10 @@
   lsass.exe: 
     the Local Security Authority Subsystem (LSASS) provides user authentication services, manages the local security policy, and generates access tokens.
 
+Service Enumeration:
+  sc /?
+
+  you can also look in the HKLM regristry to find all the services
+  things should be running from system 32
+  
+  
