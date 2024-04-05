@@ -1,0 +1,6 @@
+.exe = BIOS
+.EFI = UEFI
+
+  lsass.exe: 
+    the Local Security Authority Subsystem (LSASS) provides user authentication services, manages the local security policy, and generates access tokens.
+
