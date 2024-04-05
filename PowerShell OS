@@ -24,7 +24,12 @@ Powershell Profiles:
 	If it returns true that means there is a configured profile 
 	Using ($profile | Get-Member -Type NoteProperty | ft -wrap) displays profile Names, MemberType, and Paths
 
-	Run Keys:
+	Run Keys: check the HKCU for things hidden in Run and RunOnce
+
+	Services : 
+		They can be used to establish things like back doors because some services are run automaticlly on start up
+
+	
 
 
 --------------------------------------------------------------------------------------
