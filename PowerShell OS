@@ -35,6 +35,11 @@ Powershell Profiles:
 --------------------------------------------------------------------------------------
 Linux Persistance Mechanisims
 
+the etc/inittab and the /etc/rc*.d both run on bootup of the linux machine
+
+/etc/enviorment holds paths for diffrent variables 
+
+/etc/profiles can hold scripts that can create persistance when a user logs in same with .bash_profile
 --------------------------------------------------------------------------------------
 Basic Powershell Concepts:
 
