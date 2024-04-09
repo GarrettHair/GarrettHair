@@ -1,0 +1,18 @@
+Windows:
+    View all Processes, sort them by PID. (Get-Process | Sort -Property Id | more)
+
+    View all processes, but sort by PID and only show the properties I define. (Get-Process | Select Name, Id, Description | Sort -Property Id | more)
+
+    View modules/DLLs used by defined process and their file locations. (Get-Process chrome | foreach {$_.modules} | more)
+
+    View only modules/DLLs used by Chrome with "chrome" in the name and their file locations. (Get-Process chrome | foreach {$_.modules} | Where-Object ModuleName -like '*chrome*' | more)
+
+    View extended information for all inactive services. (sc queryex type=service state=inactive)
+
+    Displays all TCP/UDP connections with ports in numerical form with PID and executable associated to the connections (netstat -anob | more)
+
+    Displays processes not running on system32 (Get-ciminstance win32_service | select name, processid, pathname | where {$_.pathname -notmatch “system32” get-process | select name,id,path | where path -notmatch "system32")
+
+    
+
+   
