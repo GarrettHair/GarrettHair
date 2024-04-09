@@ -29,6 +29,8 @@ Powershell Profiles:
 	Services : 
 		They can be used to establish things like back doors because some services are run automaticlly on start up
 
+	schtacks : 
+
 	
 
 
