@@ -13,6 +13,12 @@ Windows:
 
     Displays processes not running on system32 (Get-ciminstance win32_service | select name, processid, pathname | where {$_.pathname -notmatch “system32” get-process | select name,id,path | where path -notmatch "system32")
 
+LINUX:
+    init (/sbin/init) has a process ID of 1; and its parent, the Kernel has a PID of 0.
     
+    Sticky bit protects deletion of files
 
+    for sysV its service
+
+    for SYSTEMD its systemctl
    
