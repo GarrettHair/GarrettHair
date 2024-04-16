@@ -1,0 +1,35 @@
+---------------Use the GUI--------------
+Things like scheduled tasks can be found with the gui
+
+-----------------Windows----------------
+Launch Mechinisims:
+    Regristy:
+      Run\RunOnce keys
+    Scheduled Tasks
+    Powershell Profiles - test-path -path $profile.allusersallhosts/alluserscurrenthost/currentuserallhosts/currentusercurrenthost (if true then type it)  
+suspisious ports (sequential numbers, repeating numbers) (netstat -anob)
+to find the process (get-process <PID> | select (whatever objects))
+use sysinternals procmon, autoruns(big help for finding runkeys and scheduled tasks, maybe more), processex, etc...
+
+Windows artifacts:
+  Things left behind (there is a whole page in the FG on it)
+  Recycle bin 
+  BAM (Easy to go through, looking for file paths that are not system32, something maybe in public/downloads) (1) ---------------------------------------------------
+  Prefetch (a lot of things to go through) (2) ---------------------------------------------------------------
+  jumplist
+  recent
+  UserAssist (ROT13) (3) ---------------------------------------------------------
+  Browser
+  
+-----------------Linux------------------
+Bash profiles - /etc/profile
+Cron - /etc/cron /var/spool/cron
+init 
+deamons
+runlevel
+process tree ps -elf --forest
+
+suspisious ports (sequential numbers, repeating numbers) use (sudo netstat -ltup) gets the ports and PIDS
+
+
+
