@@ -3,7 +3,7 @@ Linux - 10.50.34.191
 
 10.50.21.2:8000
 
-
+xfreerdp /u:username /v:IP -dynamic-resolution +glyph-cache +clipboard
 
 ---------------Use the GUI--------------
 Things like scheduled tasks can be found with the gui
